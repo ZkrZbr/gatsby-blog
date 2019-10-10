@@ -6,16 +6,25 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^13.4.0",
+    "env-cmd": "^10.0.1",
     "gatsby": "^2.15.34",
+    "gatsby-plugin-react-helmet": "^3.1.11",
+    "gatsby-plugin-typography": "^2.3.12",
+    "gatsby-source-contentful": "^2.1.47",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-fairy-gates": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
