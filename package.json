@@ -9,7 +9,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "develop": "env-cmd -f .env.development gatsby develop",
+    "develop": "env-cmd -f .env gatsby develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
